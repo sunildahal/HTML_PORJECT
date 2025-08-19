@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MiniCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">MiniCart</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <button class="cart-toggle" id="cartToggle">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="sidebarCartItems">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="sidebarSubtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>GST (10%):</span>
+                <span id="sidebarGST">$0.00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="sidebarTotal">$0.00</span>
+            </div>
+            <a href="cart.html" class="view-cart-btn">View Full Cart</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear from you! Whether you have questions about our products, need help with an order, or just want to say hello, feel free to reach out.</p>
+                    <ul>
+                        <li><strong>Email:</strong> support@minicart.com</li>
+                        <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+                        <li><strong>Address:</strong> 123 Shopping Street, Tech City, TC 45678</li>
+                        <li><strong>Business Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MiniCart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

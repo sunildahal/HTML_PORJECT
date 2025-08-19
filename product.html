@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - MiniCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">MiniCart</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <button class="cart-toggle" id="cartToggle">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="sidebarCartItems">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="sidebarSubtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>GST (10%):</span>
+                <span id="sidebarGST">$0.00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span id="sidebarTotal">$0.00</span>
+            </div>
+            <a href="cart.html" class="view-cart-btn">View Full Cart</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="all-products">
+            <h2>All Products</h2>
+            <div class="product-grid" id="allProducts">
+                <!-- All products will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Product Detail Modal -->
+        <div class="product-modal" id="productModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+                <div class="product-detail">
+                    <img id="modalImage" src="" alt="">
+                    <div class="detail-info">
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalDescription"></p>
+                        <p class="price" id="modalPrice"></p>
+                        <button class="add-to-cart-btn" id="modalAddToCart">Add to Cart</button>
+                        
+                        <div class="reviews-section">
+                            <h3>Customer Reviews</h3>
+                            <div id="reviewsList">
+                                <!-- Reviews will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MiniCart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
